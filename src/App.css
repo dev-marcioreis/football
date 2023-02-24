@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+/*==========Google Fonts==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*==========Reset==========*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*==========Root==========*/
+:root {
+  --blue-color: hsl(190, 93%, 65%);
+  --black-color: hsl(0, 0%, 0%);
+  --white-color: hsl(0, 0%, 100%);
+  --transparent-color: rgba(0, 0, 0, 0);
+  --red-color: hsl(349, 98%, 58%);
+  --yellow-color: hsl(41, 89%, 50%);
+  --green-color: hsl(96, 100%, 46%);
+  --text-color: hsl(0, 1%, 77%);
+  --glass-color: hsla(0, 0%, 100%, 0.075);
+  --transition: all 400ms ease;
+  --shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+  --gradient-color: linear-gradient(45deg, hsl(44, 88%, 51%), hsl(29, 79%, 55%));
+  --gradient2-color: linear-gradient(45deg, hsl(298, 95%, 69%), hsl(295, 93%, 47%));
+  --card-bg: hsl(56, 100%, 75%);
+  --light-pink: hsl(329, 81%, 80%);
+  --dark-pink: hsl(335, 71%, 56%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*==========Base==========*/
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+body {
+  color: var(--text-color);
+  height: 300rem;
+}
+::-webkit-scrollbar {
+  width: .5rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--black-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+.section {
+  padding: 3rem 0;
+}
+.container {
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.grid {
+  display: grid;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+p, a, span, small {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+  .container {
+      padding: 0 1rem;
+      margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+  h1, h2, h3, h4 {
+      font-size: 1rem;
   }
+  p, a, span, small {
+      font-size: .8rem;
+  }
+  
 }
