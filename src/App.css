@@ -16,6 +16,7 @@
 /*==========Root==========*/
 :root {
   --blue-color: hsl(190, 93%, 65%);
+  --logo-color: hsl(218, 92%, 69%);
   --black-color: hsl(0, 0%, 0%);
   --white-color: hsl(0, 0%, 100%);
   --transparent-color: rgba(0, 0, 0, 0);
