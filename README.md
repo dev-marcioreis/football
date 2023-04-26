@@ -6,7 +6,7 @@ Preciso de uma API para gerar os resultados dos jogos, por isso o projeto não f
 
 ## 🚀 Parado...
 
-## 📋 Técnologias
+## 📋 Tecnologias
 React
 
 ## ✒️ Autor
